@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videojuegos</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(90deg, #7c3aed, #2563eb);
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #020617;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #e5e7eb;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #020617;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #38bdf8;
+    }
+    footer {
+      background-color: #020617;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Mundo de los Videojuegos</h1>
+    <p>Noticias, géneros y juegos más populares</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#generos">Géneros</a>
+    <a href="#populares">Populares</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>
+        Esta página está dedicada al mundo de los videojuegos. Aquí encontrarás
+        información sobre distintos géneros, juegos populares y todo lo
+        relacionado con el gaming.
+      </p>
+    </section>
+
+    <section id="generos">
+      <h2>Géneros de Videojuegos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Acción</h3>
+          <p>Juegos rápidos con combates, reflejos y adrenalina.</p>
+        </div>
+        <div class="card">
+          <h3>Aventura</h3>
+          <p>Exploración, historia y resolución de acertijos.</p>
+        </div>
+        <div class="card">
+          <h3>RPG</h3>
+          <p>Rol, desarrollo de personajes y mundos extensos.</p>
+        </div>
+        <div class="card">
+          <h3>Deportes</h3>
+          <p>Simulación de fútbol, baloncesto y otros deportes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="populares">
+      <h2>Videojuegos Populares</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Minecraft</h3>
+          <p>Creatividad y supervivencia en un mundo de bloques.</p>
+        </div>
+        <div class="card">
+          <h3>Fortnite</h3>
+          <p>Battle Royale con construcción y eventos en vivo.</p>
+        </div>
+        <div class="card">
+          <h3>GTA V</h3>
+          <p>Acción en mundo abierto con historia y modo online.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Puedes crear esta página en <strong>GitHub Pages</strong> subiendo este
+        archivo como <code>index.html</code> a tu repositorio.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 - Página de Videojuegos | Hecho con HTML y CSS</p>
+  </footer>
+</body>
+</html>
