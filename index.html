@@ -73,28 +73,27 @@
   </header>
 
   <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#generos">Géneros</a>
-    <a href="#populares">Populares</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#generos">1º Juego</a>
+    <a href="#populares">2º Juego</a>
+    <a href="#contacto">3º Juego</a>
   </nav>
 
   <main>
     <section id="inicio">
       <h2>Bienvenido</h2>
       <p>
-        se
+        ¡Diviertete probando estos juegos!
       </p>
     </section>
 
     <section id="generos">
-      <h2>Adivina el número</h2>
+      <h2>Piedra, Papel o Tijera</h2>
       <div class="cards">
         <div class="card">
-          <h3></h23
+         
 <p></p>
 <div>
-  <h2>Piedra, Papel o Tijeras</h2>
+  <h2>¡Gana a la máquina!</h2>
   <button onclick="jugar('piedra')">🪨 Piedra</button>
   <button onclick="jugar('papel')">📄 Papel</button>
   <button onclick="jugar('tijera')">✂️ Tijera</button>
@@ -126,12 +125,12 @@ function jugar(eleccionUsuario) {
     </section>
 
     <section id="populares">
-      <h2>Piedra, papel o tijeras</h2>
+      <h2>Adivina el número (1–10)</h2>
       <div class="cards">
         <div class="card">
           <h3></h3>
           <p> <div>
-  <h2>Adivina el número (1–10)</h2>
+  <h2>¿En qué número pienso?</h2>
   <input type="number" id="numero" min="1" max="10">
   <button onclick="adivinar()">Probar</button>
   <p id="mensaje"></p>
@@ -147,9 +146,9 @@ function adivinar() {
   if (intento === numeroSecreto) {
     mensaje.textContent = "¡Correcto! 🎯";
   } else if (intento > numeroSecreto) {
-    mensaje.textContent = "Demasiado alto ⬆️";
+    mensaje.textContent = "Más bajo ⬇️";
   } else {
-    mensaje.textContent = "Demasiado bajo ⬇️";
+    mensaje.textContent = "Más alto ⬆️";
   }
 }
 </script></p>
@@ -186,6 +185,7 @@ function sumar() {
   </footer>
 </body>
 </html>
+
 
 
 
