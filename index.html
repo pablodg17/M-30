@@ -105,25 +105,33 @@
       <div class="cards">
         <div class="card">
           <h3>Minecraft</h3>
-          <p><script>
+          <p><div>
+  <h2>Piedra, Papel o Tijera</h2>
+  <button onclick="jugar('piedra')">🪨 Piedra</button>
+  <button onclick="jugar('papel')">📄 Papel</button>
+  <button onclick="jugar('tijera')">✂️ Tijera</button>
+  <p id="resultado"></p>
+</div>
+
+<script>
 function jugar(eleccionUsuario) {
   const opciones = ["piedra", "papel", "tijera"];
-  const eleccionCPU = opciones[Math.floor(Math.random() * opciones.length)];
-  let resultado = "";
+  const eleccionCPU = opciones[Math.floor(Math.random() * 3)];
 
+  let resultado = "";
   if (eleccionUsuario === eleccionCPU) {
-    resultado = "🤝 Empate";
+    resultado = "Empate 🤝";
   } else if (
     (eleccionUsuario === "piedra" && eleccionCPU === "tijera") ||
     (eleccionUsuario === "papel" && eleccionCPU === "piedra") ||
     (eleccionUsuario === "tijera" && eleccionCPU === "papel")
   ) {
-    resultado = "🎉 Ganaste";
+    resultado = "¡Ganaste! 🎉";
   } else {
-    resultado = "💀 Perdiste";
+    resultado = "Perdiste 😢";
   }
 
-  document.getElementById("ppt").textContent =
+  document.getElementById("resultado").textContent =
     `Tú: ${eleccionUsuario} | CPU: ${eleccionCPU} → ${resultado}`;
 }
 </script></p>
@@ -165,4 +173,5 @@ function jugar(eleccionUsuario) {
 <h2>🔢 Contador de clics</h2>
 <button onclick="contar()">Clic</button>
 <p id="contador">0</p>
+
 
