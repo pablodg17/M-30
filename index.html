@@ -159,10 +159,24 @@ function adivinar() {
     </section>
 
     <section id="contacto">
-      <h2>contador de clicks</h2>
+      <div class="cards">
+        <div class="card">
+      <h2>Cliks rápidos</h2>
       <p>
-        Puedes crear esta página en <strong>GitHub Pages</strong> subiendo este
-        archivo como <code>index.html</code> a tu repositorio.
+        <div>
+  <h2>Juego de Reflejos</h2>
+  <button id="btn" onclick="sumar()">¡Click!</button>
+  <p>Puntos: <span id="puntos">0</span></p>
+</div>
+
+<script>
+let puntos = 0;
+
+function sumar() {
+  puntos++;
+  document.getElementById("puntos").textContent = puntos;
+}
+</script>
       </p>
     </section>
   </main>
@@ -172,6 +186,7 @@ function adivinar() {
   </footer>
 </body>
 </html>
+
 
 
 
