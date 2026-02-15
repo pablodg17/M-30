@@ -93,19 +93,7 @@
         <div class="card">
           <h3>🎯 Adivina el número</h23
 <p>Intenta adivinar un número del 1 al 10.</p>
-<input type="number" id="numero" min="1" max="10">
-<button onclick="adivinar()">Probar</button>
-<p id="resultado"></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="populares">
-      <h2>Piedra, papel o tijeras</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Minecraft</h3>
-          <p><div>
+<div>
   <h2>Piedra, Papel o Tijera</h2>
   <button onclick="jugar('piedra')">🪨 Piedra</button>
   <button onclick="jugar('papel')">📄 Papel</button>
@@ -134,7 +122,15 @@ function jugar(eleccionUsuario) {
   document.getElementById("resultado").textContent =
     `Tú: ${eleccionUsuario} | CPU: ${eleccionCPU} → ${resultado}`;
 }
-</script></p>
+</script>
+    </section>
+
+    <section id="populares">
+      <h2>Piedra, papel o tijeras</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Minecraft</h3>
+          <p> </p>
         </div>
         <div class="card">
           <h3>Fortnite</h3>
@@ -173,5 +169,6 @@ function jugar(eleccionUsuario) {
 <h2>🔢 Contador de clics</h2>
 <button onclick="contar()">Clic</button>
 <p id="contador">0</p>
+
 
 
