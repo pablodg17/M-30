@@ -91,10 +91,10 @@
       <h2>Adivina el número</h2>
       <div class="cards">
         <div class="card">
-          <h3>🎯 Adivina el número</h23
-<p>Intenta adivinar un número del 1 al 10.</p>
+          <h3></h23
+<p></p>
 <div>
-  <h2>Piedra, Papel o Tijera</h2>
+  <h2>Piedra, Papel o Tijeras</h2>
   <button onclick="jugar('piedra')">🪨 Piedra</button>
   <button onclick="jugar('papel')">📄 Papel</button>
   <button onclick="jugar('tijera')">✂️ Tijera</button>
@@ -129,17 +129,32 @@ function jugar(eleccionUsuario) {
       <h2>Piedra, papel o tijeras</h2>
       <div class="cards">
         <div class="card">
-          <h3>Minecraft</h3>
-          <p> </p>
+          <h3></h3>
+          <p> <div>
+  <h2>Adivina el número (1–10)</h2>
+  <input type="number" id="numero" min="1" max="10">
+  <button onclick="adivinar()">Probar</button>
+  <p id="mensaje"></p>
+</div>
+
+<script>
+const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+function adivinar() {
+  const intento = Number(document.getElementById("numero").value);
+  const mensaje = document.getElementById("mensaje");
+
+  if (intento === numeroSecreto) {
+    mensaje.textContent = "¡Correcto! 🎯";
+  } else if (intento > numeroSecreto) {
+    mensaje.textContent = "Demasiado alto ⬆️";
+  } else {
+    mensaje.textContent = "Demasiado bajo ⬇️";
+  }
+}
+</script></p>
         </div>
-        <div class="card">
-          <h3>Fortnite</h3>
-          <p>Battle Royale con construcción y eventos en vivo.</p>
-        </div>
-        <div class="card">
-          <h3>GTA V</h3>
-          <p>Acción en mundo abierto con historia y modo online.</p>
-        </div>
+      
       </div>
     </section>
 
@@ -158,17 +173,8 @@ function jugar(eleccionUsuario) {
 </body>
 </html>
 
-<h2>✊✋✌ Piedra, Papel o Tijera</h2>
-<button onclick="jugar('piedra')">Piedra</button>
-<button onclick="jugar('papel')">Papel</button>
-<button onclick="jugar('tijera')">Tijera</button>
-<p id="ppt"></p>
 
-<hr>
 
-<h2>🔢 Contador de clics</h2>
-<button onclick="contar()">Clic</button>
-<p id="contador">0</p>
 
 
 
