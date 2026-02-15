@@ -105,7 +105,28 @@
       <div class="cards">
         <div class="card">
           <h3>Minecraft</h3>
-          <p>Creatividad y supervivencia en un mundo de bloques.</p>
+          <p><script>
+function jugar(eleccionUsuario) {
+  const opciones = ["piedra", "papel", "tijera"];
+  const eleccionCPU = opciones[Math.floor(Math.random() * opciones.length)];
+  let resultado = "";
+
+  if (eleccionUsuario === eleccionCPU) {
+    resultado = "🤝 Empate";
+  } else if (
+    (eleccionUsuario === "piedra" && eleccionCPU === "tijera") ||
+    (eleccionUsuario === "papel" && eleccionCPU === "piedra") ||
+    (eleccionUsuario === "tijera" && eleccionCPU === "papel")
+  ) {
+    resultado = "🎉 Ganaste";
+  } else {
+    resultado = "💀 Perdiste";
+  }
+
+  document.getElementById("ppt").textContent =
+    `Tú: ${eleccionUsuario} | CPU: ${eleccionCPU} → ${resultado}`;
+}
+</script></p>
         </div>
         <div class="card">
           <h3>Fortnite</h3>
@@ -144,3 +165,4 @@
 <h2>🔢 Contador de clics</h2>
 <button onclick="contar()">Clic</button>
 <p id="contador">0</p>
+
